@@ -10,7 +10,7 @@ pipeline {
     }
     stage('Install Dependencies') {
       steps {
-        sh 'brew install pipx'
+        sh 'brew install pip'
         sh 'python3 -m pip install -r requirements.txt'
       }
     }
